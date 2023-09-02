@@ -9,7 +9,7 @@ body {
 .mainWrapper {
   background: linear-gradient(
     0deg,
-    rgba(22, 24, 24, 1) 0%,
+    rgba(22, 24, 24, 1) 50%,
     rgba(50, 50, 50, 1) 100%
   );
 }
