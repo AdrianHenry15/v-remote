@@ -1,5 +1,8 @@
 import React from "react"
 import Container from "../Container"
+import Climate from "./Climate"
+import Controls from "./Controls"
+import Owner from "./Owner"
 
 interface OptionsContainerProps {
   mainOwner: boolean
@@ -7,24 +10,16 @@ interface OptionsContainerProps {
 }
 
 const OptionsContainer = (props: OptionsContainerProps) => {
-  const renderOwnerOptions = () => {
-    if (props.mainOwner) {
-      return (
-        <Container>
-          <div>
-            <span>Climate</span>
-          </div>
-          <div>
-            <span>Controls</span>
-          </div>
-          <div>
-            <span>{props.mainOwner ? "Summayah" : "Haqq"}</span>
-          </div>
-        </Container>
-      )
-    }
-  }
-  return <div>{renderOwnerOptions()}</div>
+  return (
+    <div>
+      {" "}
+      <div>
+        <Climate />
+        <Controls />
+        <Owner />
+      </div>
+    </div>
+  )
 }
 
 export default OptionsContainer

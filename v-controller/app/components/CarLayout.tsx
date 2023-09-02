@@ -6,6 +6,7 @@ import Header from "./header/Header"
 import CarDisplay from "./car-display/CarDisplay"
 import WidgetContainer from "./widgets/WidgetContainer"
 import OptionsContainer from "./options/OptionsContainer"
+import GasDisplay from "./gas-display/GasDisplay"
 
 interface CarLayoutProps {
   climate: string
@@ -19,9 +20,12 @@ const CarLayout = () => {
   return (
     <div>
       <Container>
-        <Header mainOwner={mainOwner} />
-        <CarDisplay />
-        <WidgetContainer />
+        <div className="backSplash">
+          <Header mainOwner={mainOwner} />
+          <GasDisplay />
+          <CarDisplay />
+          <WidgetContainer />
+        </div>
         <OptionsContainer mainOwner={mainOwner} setMainOwner={setMainOwner} />
       </Container>
     </div>
