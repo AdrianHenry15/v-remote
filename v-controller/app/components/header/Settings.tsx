@@ -1,10 +1,10 @@
 import React from "react"
-import { FcSettings } from "react-icons/fc"
+import { BsFillGearFill } from "react-icons/bs"
 
 const Settings = () => {
   return (
     <div className="absolute left-0 right-auto pl-6">
-      <FcSettings size="20px" />
+      <BsFillGearFill size="16px" />
     </div>
   )
 }

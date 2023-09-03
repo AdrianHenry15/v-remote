@@ -7,7 +7,7 @@ interface TitleProps {
 const Title = (props: TitleProps) => {
   return (
     <div>
-      <span>{props.name}</span>
+      <h3>{props.name}</h3>
     </div>
   )
 }

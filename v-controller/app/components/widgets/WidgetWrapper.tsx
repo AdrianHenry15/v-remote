@@ -1,9 +1,15 @@
 import React from "react"
 
-const WidgetWrapper = ({ children }: { children: React.ReactNode }) => {
+interface WidgetWrapperProps {
+  children: React.ReactNode
+  text: string
+}
+
+const WidgetWrapper = (props: WidgetWrapperProps) => {
   return (
-    <div className="rounded-full border-2 flex items-center justify-center p-4">
-      {children}
+    <div className="flex flex-col items-center justify-center p-4">
+      {props.children}
+      <span className="text-xs pt-2">{props.text}</span>
     </div>
   )
 }

@@ -13,10 +13,10 @@ const OptionsContainer = (props: OptionsContainerProps) => {
   return (
     <div>
       {" "}
-      <div>
+      <div className="flex flex-col">
         <Climate />
         <Controls />
-        <Owner />
+        <Owner mainOwner={props.mainOwner} setMainOwner={props.setMainOwner} />
       </div>
     </div>
   )

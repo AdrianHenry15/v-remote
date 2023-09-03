@@ -1,13 +1,13 @@
 import React from "react"
-import WidgetWrapper from "./WidgetWrapper"
+import WidgetWrapper from "../WidgetWrapper"
 import { BiSolidLockOpen } from "react-icons/bi"
 
-const Lock = () => {
+const HeadLights = () => {
   return (
-    <WidgetWrapper text="Locks">
+    <WidgetWrapper text="Unlocked">
       <BiSolidLockOpen size="20px" />
     </WidgetWrapper>
   )
 }
 
-export default Lock
+export default HeadLights

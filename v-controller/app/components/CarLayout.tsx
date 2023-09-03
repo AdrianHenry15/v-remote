@@ -22,7 +22,7 @@ const CarLayout = () => {
       <Container>
         <div className="backSplash">
           <Header mainOwner={mainOwner} />
-          <GasDisplay />
+          {/* <GasDisplay /> */}
           <CarDisplay />
           <WidgetContainer />
         </div>

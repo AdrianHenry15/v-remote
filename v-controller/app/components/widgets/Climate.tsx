@@ -4,7 +4,7 @@ import WidgetWrapper from "./WidgetWrapper"
 
 const Climate = () => {
   return (
-    <WidgetWrapper>
+    <WidgetWrapper text="Fan">
       <FaFan size="20px" />
     </WidgetWrapper>
   )

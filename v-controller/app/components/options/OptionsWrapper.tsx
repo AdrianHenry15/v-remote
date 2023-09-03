@@ -10,17 +10,21 @@ interface OptionsWrapperProps {
 
 const OptionsWrapper = (props: OptionsWrapperProps) => {
   return (
-    <div className="py-4 flex justify-between items-center">
-      <div>
+    <div className="py-4 flex items-center">
+      <div className="w-full">
         {/* ICON AND TITLE */}
-        <div className="flex items-center">
-          {props.children}
-          {props.title}
+        <div className="flex items-center justify-between">
+          <div className="flex">
+            {/* ICON */}
+            {props.children}
+            {/* TITLE */}
+            <span className="text-sm">{props.title}</span>
+          </div>
+          <BsChevronRight size="25px" />
         </div>
         {/* SUBTITLE */}
-        <span className="pl-4 text-sm font-thin">{props.subtext}</span>
+        <span className="pl-10 text-xs font-thin">{props.subtext}</span>
       </div>
-      <BsChevronRight size="25px" />
     </div>
   )
 }

@@ -4,8 +4,10 @@ import { CiTempHigh } from "react-icons/ci"
 
 const Climate = () => {
   return (
-    <OptionsWrapper title="CLIMATE" subtext={`Interior: ${""}`}>
-      <CiTempHigh />
+    <OptionsWrapper title="Climate" subtext={`Interior: ${""}`}>
+      <div className="pr-2">
+        <CiTempHigh size="25px" />
+      </div>
     </OptionsWrapper>
   )
 }

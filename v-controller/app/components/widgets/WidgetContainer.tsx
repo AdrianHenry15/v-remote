@@ -1,13 +1,13 @@
 import React from "react"
 import Climate from "./Climate"
-import Keys from "./Keys"
 import Lock from "./Lock"
+import HeadLights from "./lights/HeadLights"
 
 const WidgetContainer = () => {
   return (
-    <div className="flex items-center justify-evenly">
+    <div className="flex items-center justify-evenly pb-20 relative">
       <Climate />
-      <Keys />
+      <HeadLights />
       <Lock />
     </div>
   )
