@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react"
 import WidgetWrapper from "../WidgetWrapper"
 import { useWidgetStore } from "@/app/hooks/useWidgetStore"

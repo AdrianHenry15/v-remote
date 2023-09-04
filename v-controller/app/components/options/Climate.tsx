@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react"
 import OptionsWrapper from "./OptionsWrapper"
 import { CiTempHigh } from "react-icons/ci"

@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react"
 import OptionsWrapper from "./OptionsWrapper"
 import { MdOutlineSettingsRemote } from "react-icons/md"

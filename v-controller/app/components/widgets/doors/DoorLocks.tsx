@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react"
 import WidgetWrapper from "../WidgetWrapper"
 import { AiFillLock } from "react-icons/ai"

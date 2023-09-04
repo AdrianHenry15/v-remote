@@ -4,11 +4,15 @@ import React from "react"
 import WidgetWrapper from "./WidgetWrapper"
 import { AiOutlineSound } from "react-icons/ai"
 
-const Honk = () => {
+interface HonkProps {
+  onClick: () => void
+}
+
+const Honk = (props: HonkProps) => {
   return (
     <WidgetWrapper
       onClick={() => {
-        console.log("Click")
+        props.onClick()
       }}
       text="Horn">
       <AiOutlineSound size="20px" />

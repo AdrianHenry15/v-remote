@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react"
-import Climate from "../dashboard/Climate"
+import Climate from "./Climate"
 import DoorLocks from "./doors/DoorLocks"
 import HeadLights from "./lights/HeadLights"
 import Trunk from "./doors/Trunk"
@@ -20,8 +20,10 @@ import DriverWindow from "./windows/Driver"
 import PassengerWindow from "./windows/Passenger"
 import Hood from "./doors/Hood"
 import WindSheildWipers from "./windows/WindSheildWipers"
+import { useWidgetStore } from "@/app/hooks/useWidgetStore"
 
 const WidgetContainer = () => {
+  const { setHonk } = useWidgetStore()
   return (
     <div className="flex flex-col items-center justify-evenly pb-20 relative overflow-y-scroll border-y-2">
       <div className="max-h-0 ">
@@ -41,7 +43,7 @@ const WidgetContainer = () => {
         </div>
         {/* DOORS */}
         <div className="flex">
-          <Honk />
+          <Honk onClick={() => console.log("Clicks")} />
           <DoorLocks />
           <Trunk />
           <Hood />
