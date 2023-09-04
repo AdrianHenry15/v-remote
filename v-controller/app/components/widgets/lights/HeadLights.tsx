@@ -1,11 +1,13 @@
+"use client"
+
 import React from "react"
 import WidgetWrapper from "../WidgetWrapper"
-import { BiSolidLockOpen } from "react-icons/bi"
+import { PiHeadlightsBold } from "react-icons/pi"
 
 const HeadLights = () => {
   return (
-    <WidgetWrapper text="Unlocked">
-      <BiSolidLockOpen size="20px" />
+    <WidgetWrapper onClick={() => {}} text="Headlights">
+      <PiHeadlightsBold size="20px" />
     </WidgetWrapper>
   )
 }

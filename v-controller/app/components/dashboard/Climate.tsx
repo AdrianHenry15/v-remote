@@ -1,6 +1,6 @@
 import React from "react"
 import { FaFan } from "react-icons/fa"
-import WidgetWrapper from "./WidgetWrapper"
+import WidgetWrapper from "../widgets/WidgetWrapper"
 
 const Climate = () => {
   return (

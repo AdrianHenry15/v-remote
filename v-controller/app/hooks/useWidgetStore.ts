@@ -1,3 +1,5 @@
+"use client"
+
 import { create } from "zustand"
 
 export enum ClimateTemp {
@@ -22,7 +24,7 @@ interface WidgetStore {
   rearLightsOn: boolean
   honk: boolean
   climate: ClimateTemp
-  locked: boolean
+  doorsOpen: boolean
   trunkOpen: boolean
   hoodOpen: boolean
   carStarted: boolean
@@ -30,11 +32,11 @@ interface WidgetStore {
   windowUp: boolean
 
   // ACTIONS
+  setClimate: (temp: ClimateTemp) => void
   setHeadLights: () => void
   setRearLights: () => void
   setHonk: () => void
-  setClimate: (temp: ClimateTemp) => void
-  setLocked: () => void
+  setDoorsOpen: () => void
   setTrunkOpen: () => void
   setHoodOpen: () => void
   setCarStart: () => void
@@ -48,7 +50,7 @@ export const useWidgetStore = create<WidgetStore>((set, get) => ({
   rearLightsOn: false,
   honk: false,
   climate: ClimateTemp.LVL11,
-  locked: false,
+  doorsOpen: false,
   trunkOpen: false,
   hoodOpen: false,
   carStarted: false,
@@ -56,12 +58,14 @@ export const useWidgetStore = create<WidgetStore>((set, get) => ({
   windowUp: false,
 
   // ACTIONS
+  setClimate: (temp: ClimateTemp) => set({ climate: temp }),
   setHeadLights: () => set({ headLightsOn: !get().headLightsOn }),
   setRearLights: () => set({ rearLightsOn: !get().rearLightsOn }),
   setHonk: () => set({ honk: !get().honk }),
-  setClimate: (temp: ClimateTemp) => set({ climate: temp }),
-  setLocked: () => set({ locked: !get().locked }),
-  setTrunkOpen: () => set({ trunkOpen: !get().trunkOpen }),
+  setDoorsOpen: () => set({ doorsOpen: !get().doorsOpen }),
+  setTrunkOpen: () => {
+    console.log(get().trunkOpen), set({ trunkOpen: !get().trunkOpen })
+  },
   setHoodOpen: () => set({ hoodOpen: !get().hoodOpen }),
   setCarStart: () => set({ carStarted: !get().carStarted }),
   setWindowDown: () => set({ windowDown: !get().windowDown }),

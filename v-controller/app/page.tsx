@@ -1,4 +1,5 @@
-import Image from "next/image"
+"use client"
+
 import CarLayout from "./components/CarLayout"
 
 export default function Home() {

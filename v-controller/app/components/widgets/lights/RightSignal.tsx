@@ -1,7 +1,15 @@
+"use client"
+
 import React from "react"
+import WidgetWrapper from "../WidgetWrapper"
+import { BsSignTurnRight } from "react-icons/bs"
 
 const RightSignal = () => {
-  return <div>RightSignal</div>
+  return (
+    <WidgetWrapper onClick={() => {}} text="RightSignal">
+      <BsSignTurnRight size="20px" />
+    </WidgetWrapper>
+  )
 }
 
 export default RightSignal

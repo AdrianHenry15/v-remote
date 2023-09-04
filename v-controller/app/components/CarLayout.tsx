@@ -6,7 +6,6 @@ import Header from "./header/Header"
 import CarDisplay from "./car-display/CarDisplay"
 import WidgetContainer from "./widgets/WidgetContainer"
 import OptionsContainer from "./options/OptionsContainer"
-import GasDisplay from "./gas-display/GasDisplay"
 
 interface CarLayoutProps {
   climate: string

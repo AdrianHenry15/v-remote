@@ -4,12 +4,12 @@ import React from "react"
 import WidgetWrapper from "../WidgetWrapper"
 import { BiWindowOpen } from "react-icons/bi"
 
-const BackRightWindow = () => {
+const PassengerWindow = () => {
   return (
-    <WidgetWrapper onClick={() => {}} text="Window 4">
+    <WidgetWrapper onClick={() => {}} text="Passenger">
       <BiWindowOpen size="20px" />
     </WidgetWrapper>
   )
 }
 
-export default BackRightWindow
+export default PassengerWindow
